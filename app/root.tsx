@@ -188,7 +188,7 @@ export function Layout({children}: {children?: React.ReactNode}) {
   const data = useLoaderData<typeof loader>();
   const {pathname} = useLocation();
 
-  const isCmsRoute = pathname.includes('/studio');
+  const isCmsRoute = pathname.includes('/cms');
 
   return (
     <html lang={locale.language.toLowerCase()}>
